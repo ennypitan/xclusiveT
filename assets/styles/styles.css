@@ -1,0 +1,588 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+*	{
+	text-decoration:none;
+	padding:0;
+	margin:0;
+	outline:none;
+	font-family: 'Proxima Nova Regular';
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	list-style:none;
+}
+:root{
+    --navyBlue: #00023e;
+    --black :#000000;
+    --orange:#ff4600;
+    --darkBlue:#242e3a;
+    --lightAsh:#e1e1e1;
+    --white:#ffffff;
+}
+/* FIRST NAV SECTION*/
+.first_nav_bar{
+    color:var(--black);
+    width:100%;
+    height:3.5em;
+    padding:0px 60px;
+    display:flex;
+    justify-content: space-between;
+    border-bottom: .5px solid var( --lightAsh);
+    
+}
+.first_nav_bar .upper_left{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.upper_left li{
+    list-style: none;
+    
+}
+.upper_left li a{
+    text-decoration: none;
+
+    padding:1.5em 1.5em ;
+    border-right: .5px solid var( --lightAsh);
+    color: var(--black);
+}
+.first_nav_bar .upper_right{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 0em;
+    
+}
+.first_nav_bar .upper_right li{
+    list-style: none;
+    padding-left: 1em;
+}
+.upper_right li a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--black);
+}
+.first_nav_bar li a{
+    text-decoration: none; 
+}
+.first_nav_bar li a:hover, .first_nav_bar li a:active, .first_nav_bar li a:focus{
+    color:var(--navyBlue);
+    text-decoration: none;
+}
+.upper_right .login_icon{
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url("../images/icons/Asset 4.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+/*END OF FIRST NAV SECTION*/
+/*SECOND NAV SECTION*/
+.second_nav_bar{
+    color:var(--black);
+    width:100%;
+    height:5em;
+    padding:0px 55px;
+    display:flex;
+    justify-content: space-between;
+}
+.second_nav_bar ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu_bar li{
+    list-style: none;
+    
+}
+.menu_bar ul{
+    padding-top: 2em;
+}
+.menu_bar li a{
+    text-decoration: none;
+    font-weight: bold;
+    padding:1.5em 1.5em ;
+    color: var(--black);
+}
+.menu_bar li a:hover, .menu_bar li a:active, .menu_bar li a:focus{
+    color:var(--navyBlue);
+    text-decoration: none;
+}
+.logo    {
+    width: 20em;
+    height: 5em;
+    background-image: url("../images/logo/logos.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.icons_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icon1{
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url("../images/icons/Asset 7.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+.icon2{
+    width: 1.5em;
+    height: 1.5em;
+    padding-left: 4em;
+    background-image: url("../images/icons/Asset 5.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+.icon3{
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url("../images/icons/Asset 1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+.second_nav_bar.icons_container{
+    padding-left: 2em;
+}
+/*SECOND NAV SECTION*/
+/*BANNER SECTION*/
+.banner_container{
+    width: 100%;
+    height: 80vh;
+    margin:1em auto;  
+}
+.banner_row{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+   
+   
+}
+
+.banner_card1{
+   /* background-color: rgb(88, 89, 90);*/
+    position: relative;
+    flex:0 0 40%;
+    height: 80vh;
+    margin-right: 1em;
+    border-radius: 5px;
+    margin-left: 75px;
+
+}
+.banner_card1:before{
+    content: '';
+    position: absolute;
+    bottom:0;
+    left: -1em;
+    width: 30%;
+    height: 7em;
+    background-image: url("../images/bg/dots.png");
+    background-size: contain;
+    z-index: -1;
+    opacity: .6;
+}
+
+.banner_card2{
+    position: relative;
+    flex:0 0 50%;
+    height: 80vh;
+    margin-right: 1em;
+    border-radius: .5em;
+    border-top-right-radius: 3em;
+    border-bottom-right-radius: 3em;
+    background-image: url("../images/bg/images (80).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner_card2:before{
+    content: '';
+    position: absolute;
+    top: 10em;
+    left: -7.5em;
+    width: 50%;
+    height: 50%;
+    background-image: url("../images/bg/dots.png");
+    background-size: contain;
+    z-index: -1;
+    opacity: .6;
+}
+.banner_card2-content{
+    padding: 1.5em;
+    
+}
+.banner-upper-text{
+    margin-top: 4em;
+    position: absolute;
+    font-size: 2em;
+    font-family: 'Proxima Nova Semibold';
+    font-weight: bold;
+    color: var(--orange);
+}
+.banner-lower-text{
+    bottom: 5em;
+    position: absolute;
+    font-size: 2em;
+    font-family: 'Proxima Nova regular';
+    font-weight: bold;
+    color: var(--black);
+
+}
+.arrow-left{
+    position: absolute;
+    top: 12em;
+    right:3em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    padding: 2em;
+    cursor: pointer;
+    background-color: rgba(19, 19, 19, 0.4);
+}
+.left-arrow{
+    position: absolute;
+    top:0;
+    transform: translateY(1em) translateX(-1em);
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 1000;
+}
+.arrow-right{
+    position: absolute;
+    top: 18em;
+    right:3em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    padding: 2em;
+    cursor: pointer;
+    background-color: rgba(19, 19, 19, 0.4);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 1000;
+}
+.right-arrow{
+    position: absolute;
+    top:0;
+    transform: translateY(1em) translateX(-1em);
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 1000;
+}
+.button-orders{
+    position: absolute;
+    bottom: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: var(--navyBlue);
+    color: white;
+    padding: 1.2em 3em;
+    border-radius: 30px;
+    font-family: 'Proxima Nova Semibold';
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all .3s cubic-bezier(1, -0.01, 0, 1.01);
+    background: rgba(19, 19, 19, 0.4);   
+}
+.card_1 .card_content{
+    padding: 1em;
+}.banner_card1 .heading{
+    font-size: 4em;
+    font-weight: bold;
+    color:var(--black);
+    font-family: 'Proxima Nova Regular';
+}
+.banner_card1 .body_text{
+    font-size: 1.5em;
+    font-weight: bold;
+    color:var(--navyBlue);
+    font-family: 'Proxima Nova Regular';   
+}
+.button{
+    margin-top: 2em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        float: left;
+        background: var(--navyBlue);
+        color: white;
+        padding: 1.2em 3em;
+        border-radius: 30px;
+        font-family: 'Proxima Nova Semibold';
+        cursor: pointer;
+        transition: all .3s cubic-bezier(1, -0.01, 0, 1.01);
+    }  
+    /*END OF BANNER SECTION*/
+    /*TOP SELLING WEARS SECTION*/
+
+    .wrapper{ 
+        width:100%; 
+        margin:auto; 
+        padding: 5em;
+    }
+    
+    .tabs_container { 
+        width: 100%;
+        margin:1em auto;  
+    }
+    .tabs_row{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;   
+    }
+    
+    .tab_button{
+             margin-top: 2em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: var(--darkBlue);
+            color: white;
+            padding: 1.2em 3em;
+            border-radius: 30px;
+            font-family: 'Proxima Nova Semibold';
+            cursor: pointer;
+            transition: all .3s cubic-bezier(1, -0.01, 0, 1.01);
+        }  
+    .tab_button:hover, .tab_button:active, .tab_button:focus { 
+        background:var(--navyBlue);
+        color: white;
+    }
+    
+    .tab_content_container { 
+        width: 100%;
+        margin:1em auto;
+    }
+    .topselling_content_container,
+    .recently-viewed-container,
+    .ankara-materials-container{
+        width: 100%;
+        margin:1em auto; 
+
+    }
+    .topselling_content_row,
+    .recently-viewed-row,
+    .ankara-materials-row{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-content: center;   
+
+    }
+    .topselling_card,
+    .recently-viewed-card,
+    .ankara-materials-card{
+        /*background-color: rgb(88, 89, 90);*/
+        position: relative;
+        flex:0 0 22.5%;
+        height: 70vh;
+        align-self: center;
+        margin: 1em;
+        border-radius: 5px;
+    }
+    .topselling_card:after,
+    .recently-viewed-card:after,
+    .ankara-materials-card:after{
+        content: '-45%';
+        position: absolute;
+        top: 0;
+        right: .5em;
+        padding: .5em;
+        background-color: rgba(248, 102, 17, 0.4);
+        font-weight: bold;
+        color: var(--orange);
+       
+    }
+    .nine,
+    .ten,
+    .eleven,
+    .twelve{
+        position: relative;
+        flex:0 0 22.5%;
+        height: 50vh;  
+    }
+    .nine:after,
+    .ten:after,.eleven:after,
+    .twelve:after{
+       display: none;
+    }
+    .tab_content { 
+        display:none; 
+        transform: translateY(2em);
+    /*
+        transition: all .5s ease-in-out;
+        transition-delay: .1s;
+        opacity: 0;
+    */
+    }
+    .tab_content_active { 
+        z-index: 1000;
+    }
+   
+    .image{
+        position: relative;
+        width: 100%;
+        height: 60%;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        border-radius: 1em;
+}.nine .image, 
+.ten .image, 
+.eleven .image, 
+.twelve .image{
+       
+        width: 100%;
+        height: 100%;
+        
+ }
+    .ten-content{
+        padding:1em;
+        bottom:0;
+        position: absolute;
+        font-size: 2em;
+        
+    }
+    .ten-text{
+        text-decoration: none;
+        color: var(--white);
+        font-weight: bolder;
+        font-family: 'Proxima Nova Semibold';
+    }
+     
+    .twelve-content{
+        padding:1em;
+        position: absolute;
+        font-size: 2em;
+        color: var(--white);
+        font-family: 'Proxima Nova regular';
+        
+    }
+    .middle-twelve-text{
+        text-decoration: none;
+        color: var(--white);
+   
+    }
+    .message_icon{
+        width: 1.5em;
+        height: 1.5em;
+        background-image: url("../images/icons/Asset 6.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        cursor: pointer;
+       
+    }
+    .location_icon{
+        width: 1.5em;
+        height: 1.5em;
+        background-image: url("../images/icons/Asset 3.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        cursor: pointer;
+    }
+    .like_icon{
+        width: 1.5em;
+        height: 1.5em;
+        background-image: url("../images/icons/Asset 5.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        cursor: pointer;
+        margin-left: 3em;
+      
+    }
+.first_line{
+    display: flex;
+    justify-content:space-between ;
+}
+.lower_content{
+    padding:1.5em;
+    font-family: 'Proxima Nova Semibold';
+    font-weight: bold;
+}
+.second_line{
+    display: flex;
+    
+}
+.second_line .price{
+    margin-left: 9em;
+    font-weight: bolder;
+}
+.m_button{
+    margin-top: 2em;
+    letter-spacing: 0px;
+    float: left;
+    background: var(--navyBlue);
+    color: white;
+    padding: 1.2em 3em;
+    border-radius: 30px;
+    font-size: 1em;
+    font-family: 'Proxima Nova Regular';
+    cursor: pointer;
+    transition: all .3s cubic-bezier(1, -0.01, 0, 1.01);
+
+}
+.image_text{
+    position: absolute;
+    font-weight: bolder;
+    font-family: 'Proxima Nova Semibold';
+    color: var(--white);
+    left:.5em;
+    font-size: 2em;
+}
+.below_btn{
+    position: absolute;
+   left:5em;
+   padding: .5em;
+   bottom: 0;
+   border-radius: .5em;
+   background-color: var(--navyBlue);
+   color: var(--white);
+   cursor: pointer;
+}
+.recently-viewed-heading,
+.ankara-materials-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+    font-size: 1em;
+    font-family: 'Proxima Nova Regular';
+    font-weight: bold;
+    color: var(--navyBlue);
+    background-color: var(--lightAsh);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    flex:0 0 100%; 
+}
+.recently-viewed-heading a,
+.ankara-materials-heading a{
+    text-decoration: none;
+    color: var(--navyBlue);
+}
+.lower-text{
+    font-size: .7em;
+    text-transform: none;
+}
+/*END OF TOP SELLING WEARS SECTION*/
