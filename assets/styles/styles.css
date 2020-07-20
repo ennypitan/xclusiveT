@@ -106,7 +106,7 @@
     color: var(--black);
 }
 .menu_bar li a:hover, .menu_bar li a:active, .menu_bar li a:focus{
-    color:var(--navyBlue);
+    color:var(--orange);
     text-decoration: none;
 }
 .logo    {
